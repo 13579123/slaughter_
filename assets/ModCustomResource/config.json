@@ -1,0 +1,170 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "ModCustomResource",
+    "deps": [],
+    "uuids": [
+        "0ffe15661",
+        "337107ce-1f9e-4985-aa54-f79160ddf0d7",
+        "337107ce-1f9e-4985-aa54-f79160ddf0d7@6c48a",
+        "337107ce-1f9e-4985-aa54-f79160ddf0d7@f9941",
+        "33d860da-2cbf-40f5-862f-3e1bb878d02b",
+        "33d860da-2cbf-40f5-862f-3e1bb878d02b@6c48a",
+        "33d860da-2cbf-40f5-862f-3e1bb878d02b@f9941",
+        "4922e580-8ebf-45dc-b43b-f548ce66069c",
+        "5a72eaba-be11-46bf-afef-ab12f294c31d",
+        "5a72eaba-be11-46bf-afef-ab12f294c31d@6c48a",
+        "5a72eaba-be11-46bf-afef-ab12f294c31d@f9941",
+        "a3bf32e8-716c-4554-b6bb-15c94bcde89e",
+        "b5b55183-8e85-41fa-a02f-f7942d54d655",
+        "b5b55183-8e85-41fa-a02f-f7942d54d655@6c48a",
+        "b5b55183-8e85-41fa-a02f-f7942d54d655@f9941",
+        "cf5f1c7c-39f0-495c-82f7-57b6829c48e0",
+        "cf5f1c7c-39f0-495c-82f7-57b6829c48e0@6c48a",
+        "cf5f1c7c-39f0-495c-82f7-57b6829c48e0@f9941",
+        "d7e20892-e80d-4569-80bf-bc378f5992a2",
+        "d7e20892-e80d-4569-80bf-bc378f5992a2@6c48a",
+        "d7e20892-e80d-4569-80bf-bc378f5992a2@f9941",
+        "dc857e79-2da2-4945-a492-33f373c27d5e",
+        "dc857e79-2da2-4945-a492-33f373c27d5e@6c48a",
+        "dc857e79-2da2-4945-a492-33f373c27d5e@f9941"
+    ],
+    "paths": {
+        "b5b55183-8e85-41fa-a02f-f7942d54d655": [
+            "Texture/Item/MeltStone",
+            "cc.ImageAsset",
+            1
+        ],
+        "b5b55183-8e85-41fa-a02f-f7942d54d655@6c48a": [
+            "Texture/Item/MeltStone/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "b5b55183-8e85-41fa-a02f-f7942d54d655@f9941": [
+            "Texture/Item/MeltStone/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "cf5f1c7c-39f0-495c-82f7-57b6829c48e0": [
+            "Texture/Player/RoseKnight",
+            "cc.ImageAsset",
+            1
+        ],
+        "cf5f1c7c-39f0-495c-82f7-57b6829c48e0@6c48a": [
+            "Texture/Player/RoseKnight/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "cf5f1c7c-39f0-495c-82f7-57b6829c48e0@f9941": [
+            "Texture/Player/RoseKnight/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "337107ce-1f9e-4985-aa54-f79160ddf0d7": [
+            "Texture/Skill/RoseSpikes",
+            "cc.ImageAsset",
+            1
+        ],
+        "337107ce-1f9e-4985-aa54-f79160ddf0d7@6c48a": [
+            "Texture/Skill/RoseSpikes/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "337107ce-1f9e-4985-aa54-f79160ddf0d7@f9941": [
+            "Texture/Skill/RoseSpikes/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "5a72eaba-be11-46bf-afef-ab12f294c31d": [
+            "Texture/Skill/RoseThorn",
+            "cc.ImageAsset",
+            1
+        ],
+        "5a72eaba-be11-46bf-afef-ab12f294c31d@6c48a": [
+            "Texture/Skill/RoseThorn/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "5a72eaba-be11-46bf-afef-ab12f294c31d@f9941": [
+            "Texture/Skill/RoseThorn/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "a3bf32e8-716c-4554-b6bb-15c94bcde89e": [
+            "Spine/Player/RoseKnight/hero00031",
+            "cc.Asset",
+            1
+        ],
+        "4922e580-8ebf-45dc-b43b-f548ce66069c": [
+            "Spine/Player/RoseKnight/hero00031",
+            "sp.SkeletonData",
+            1
+        ],
+        "33d860da-2cbf-40f5-862f-3e1bb878d02b": [
+            "Spine/Player/RoseKnight/hero00031",
+            "cc.ImageAsset",
+            1
+        ],
+        "33d860da-2cbf-40f5-862f-3e1bb878d02b@6c48a": [
+            "Spine/Player/RoseKnight/hero00031/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "33d860da-2cbf-40f5-862f-3e1bb878d02b@f9941": [
+            "Spine/Player/RoseKnight/hero00031/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "d7e20892-e80d-4569-80bf-bc378f5992a2": [
+            "Texture/Equipment/Melt/MeltArmour",
+            "cc.ImageAsset",
+            1
+        ],
+        "d7e20892-e80d-4569-80bf-bc378f5992a2@6c48a": [
+            "Texture/Equipment/Melt/MeltArmour/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "d7e20892-e80d-4569-80bf-bc378f5992a2@f9941": [
+            "Texture/Equipment/Melt/MeltArmour/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ],
+        "dc857e79-2da2-4945-a492-33f373c27d5e": [
+            "Texture/Equipment/Melt/MeltSword",
+            "cc.ImageAsset",
+            1
+        ],
+        "dc857e79-2da2-4945-a492-33f373c27d5e@6c48a": [
+            "Texture/Equipment/Melt/MeltSword/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "dc857e79-2da2-4945-a492-33f373c27d5e@f9941": [
+            "Texture/Equipment/Melt/MeltSword/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ]
+    },
+    "scenes": {},
+    "packs": {
+        "0ffe15661": [
+            "5a72eaba-be11-46bf-afef-ab12f294c31d@6c48a",
+            "33d860da-2cbf-40f5-862f-3e1bb878d02b@6c48a",
+            "337107ce-1f9e-4985-aa54-f79160ddf0d7@6c48a",
+            "b5b55183-8e85-41fa-a02f-f7942d54d655@6c48a",
+            "cf5f1c7c-39f0-495c-82f7-57b6829c48e0@6c48a",
+            "d7e20892-e80d-4569-80bf-bc378f5992a2@6c48a",
+            "dc857e79-2da2-4945-a492-33f373c27d5e@6c48a"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {},
+    "hasPreloadScript": true,
+    "dependencyRelationships": {}
+}

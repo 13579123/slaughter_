@@ -1,0 +1,83 @@
+
+hero00073.png
+size: 900,367
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mao
+  rotate: false
+  xy: 2, 8
+  size: 84, 59
+  orig: 84, 59
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 69
+  size: 248, 296
+  orig: 248, 296
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 721, 185
+  size: 180, 175
+  orig: 180, 175
+  offset: 0, 0
+  index: -1
+youdabi
+  rotate: false
+  xy: 252, 155
+  size: 181, 210
+  orig: 181, 210
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 654, 8
+  size: 159, 108
+  orig: 165, 108
+  offset: 1, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 539, 169
+  size: 196, 180
+  orig: 196, 184
+  offset: 0, 0
+  index: -1
+youxiaobi
+  rotate: false
+  xy: 480, 11
+  size: 172, 149
+  orig: 172, 149
+  offset: 0, 0
+  index: -1
+zuodabi
+  rotate: false
+  xy: 252, 2
+  size: 113, 151
+  orig: 116, 151
+  offset: 3, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 367, 3
+  size: 150, 111
+  orig: 151, 113
+  offset: 1, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 764, 14
+  size: 169, 134
+  orig: 169, 134
+  offset: 0, 0
+  index: -1
+zuoxiaobi
+  rotate: true
+  xy: 435, 162
+  size: 203, 102
+  orig: 203, 102
+  offset: 0, 0
+  index: -1
