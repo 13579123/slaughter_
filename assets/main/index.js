@@ -5397,8 +5397,8 @@ System.register("chunks:///_virtual/constants.ts", ['cc'], function (exports) {
   };
 });
 
-System.register("chunks:///_virtual/Crocodile.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './BasePrototypeProperty.ts', './CharacterPrototype.ts', './CharacterManager2.ts', './CharacterToPrefabMap.ts', './MonsterManager.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, AudioClip, settingManager, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, BasePrototypeProperty, CharacterPrototype, RegisterCharacter, getComponentByCharacter, registerMonster;
+System.register("chunks:///_virtual/Crocodile.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './BasePrototypeProperty.ts', './CharacterPrototype.ts', './CharacterManager2.ts', './CharacterToPrefabMap.ts', './MonsterManager.ts', './AssetManager.ts', './LoadingManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, AudioClip, settingManager, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, BasePrototypeProperty, CharacterPrototype, RegisterCharacter, getComponentByCharacter, registerMonster, getBaseModManager, LoadingManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -5429,6 +5429,10 @@ System.register("chunks:///_virtual/Crocodile.ts", ['./rollupPluginModLoBabelHel
       getComponentByCharacter = module.getComponentByCharacter;
     }, function (module) {
       registerMonster = module.registerMonster;
+    }, function (module) {
+      getBaseModManager = module.getBaseModManager;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
     }],
     execute: function () {
       var _dec, _class, _dec2, _class2, _dec3, _dec4, _class3;
@@ -5533,18 +5537,16 @@ System.register("chunks:///_virtual/Crocodile.ts", ['./rollupPluginModLoBabelHel
         };
         _proto.skeletonData = function skeletonData() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee2$(_context2) {
               while (1) switch (_context2.prev = _context2.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context2.t0 = res;
-                  _context2.next = 4;
-                  return assets.load("Spine/Monster/Crocodile/hero00034", sp.SkeletonData, true);
-                case 4:
+                  _context2.next = 3;
+                  return getBaseModManager().load("Spine/Monster/Crocodile/hero00034", sp.SkeletonData, true);
+                case 3:
                   _context2.t1 = _context2.sent.value;
                   (0, _context2.t0)(_context2.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context2.stop();
               }
@@ -5625,6 +5627,18 @@ System.register("chunks:///_virtual/Crocodile.ts", ['./rollupPluginModLoBabelHel
         }]);
         return Crocodile;
       }(CharacterPrototype)) || _class3) || _class3));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return getBaseModManager().load("Spine/Monster/Crocodile/hero00034", sp.SkeletonData, true);
+            case 2:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      })));
       cclegacy._RF.pop();
     }
   };
@@ -5674,8 +5688,8 @@ System.register("chunks:///_virtual/DamageCalculation.ts", ['cc', './InjuryReduc
   };
 });
 
-System.register("chunks:///_virtual/DefectorSoldier.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './BasePrototypeProperty.ts', './CharacterPrototype.ts', './CharacterManager2.ts', './CharacterToPrefabMap.ts', './MonsterManager.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, AudioClip, settingManager, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, BasePrototypeProperty, CharacterPrototype, RegisterCharacter, getComponentByCharacter, registerMonster;
+System.register("chunks:///_virtual/DefectorSoldier.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './BasePrototypeProperty.ts', './CharacterPrototype.ts', './CharacterManager2.ts', './CharacterToPrefabMap.ts', './MonsterManager.ts', './LoadingManager.ts', './AssetManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, AudioClip, settingManager, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, BasePrototypeProperty, CharacterPrototype, RegisterCharacter, getComponentByCharacter, registerMonster, LoadingManager, getBaseModManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -5706,6 +5720,10 @@ System.register("chunks:///_virtual/DefectorSoldier.ts", ['./rollupPluginModLoBa
       getComponentByCharacter = module.getComponentByCharacter;
     }, function (module) {
       registerMonster = module.registerMonster;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
+    }, function (module) {
+      getBaseModManager = module.getBaseModManager;
     }],
     execute: function () {
       var _dec, _class, _dec2, _class2, _dec3, _dec4, _class3;
@@ -5812,18 +5830,16 @@ System.register("chunks:///_virtual/DefectorSoldier.ts", ['./rollupPluginModLoBa
         };
         _proto.skeletonData = function skeletonData() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee2$(_context2) {
               while (1) switch (_context2.prev = _context2.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context2.t0 = res;
-                  _context2.next = 4;
-                  return assets.load("Spine/Monster/DefectorSoldier/hero0007", sp.SkeletonData, true);
-                case 4:
+                  _context2.next = 3;
+                  return getBaseModManager().load("Spine/Monster/DefectorSoldier/hero0007", sp.SkeletonData, true);
+                case 3:
                   _context2.t1 = _context2.sent.value;
                   (0, _context2.t0)(_context2.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context2.stop();
               }
@@ -5904,6 +5920,18 @@ System.register("chunks:///_virtual/DefectorSoldier.ts", ['./rollupPluginModLoBa
         }]);
         return DefectorSoldier;
       }(CharacterPrototype)) || _class3) || _class3));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return getBaseModManager().load("Spine/Monster/DefectorSoldier/hero0007", sp.SkeletonData, true);
+            case 2:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      })));
       cclegacy._RF.pop();
     }
   };
@@ -6539,8 +6567,8 @@ System.register("chunks:///_virtual/DiamondResourcePrefab.ts", ['./rollupPluginM
   };
 });
 
-System.register("chunks:///_virtual/DivineGrace.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './CharacterPrototype.ts', './FightMapManager.ts', './CharacterToPrefabMap.ts', './SpineAnimation.ts', './AssetManager.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, Node, UITransform, sp, CcNative, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillPrototype, RegisterSkill, LanguageEntry, FromType, getFightMapInstance, getComponentByCharacter, SpineAnimation, getBaseModManager;
+System.register("chunks:///_virtual/DivineGrace.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './CharacterPrototype.ts', './FightMapManager.ts', './CharacterToPrefabMap.ts', './SpineAnimation.ts', './AssetManager.ts', './LoadingManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, Node, UITransform, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillPrototype, RegisterSkill, LanguageEntry, FromType, getFightMapInstance, getComponentByCharacter, SpineAnimation, getBaseModManager, LoadingManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -6550,11 +6578,9 @@ System.register("chunks:///_virtual/DivineGrace.ts", ['./rollupPluginModLoBabelH
     }, function (module) {
       cclegacy = module.cclegacy;
       SpriteFrame = module.SpriteFrame;
+      sp = module.sp;
       Node = module.Node;
       UITransform = module.UITransform;
-      sp = module.sp;
-    }, function (module) {
-      CcNative = module.CcNative;
     }, function (module) {
       RegisterLanguageEntry = module.RegisterLanguageEntry;
       LanguageManager = module.LanguageManager;
@@ -6579,6 +6605,8 @@ System.register("chunks:///_virtual/DivineGrace.ts", ['./rollupPluginModLoBabelH
       SpineAnimation = module.SpineAnimation;
     }, function (module) {
       getBaseModManager = module.getBaseModManager;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
     }],
     execute: function () {
       var _dec, _class, _dec2, _class2, _dec3, _dec4, _dec5, _class3;
@@ -6649,7 +6677,7 @@ System.register("chunks:///_virtual/DivineGrace.ts", ['./rollupPluginModLoBabelH
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
+                  assets = getBaseModManager();
                   _context.t0 = res;
                   _context.next = 4;
                   return assets.load("Texture/Skill/DivineGrace/spriteFrame", SpriteFrame, true);
@@ -6743,13 +6771,28 @@ System.register("chunks:///_virtual/DivineGrace.ts", ['./rollupPluginModLoBabelH
         }]);
         return DivineGrace;
       }(SkillPrototype)) || _class3) || _class3) || _class3));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return getBaseModManager().load("Texture/Skill/DivineGrace/spriteFrame", SpriteFrame, true);
+            case 2:
+              _context3.next = 4;
+              return getBaseModManager().load("Spine/Effect/0001/Hero_5404_effect", sp.SkeletonData, true);
+            case 4:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      })));
       cclegacy._RF.pop();
     }
   };
 });
 
-System.register("chunks:///_virtual/DivineLight.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './FightMapManager.ts', './CharacterPrototype.ts', './SpineAnimation.ts', './CharacterToPrefabMap.ts', './LoadingManager.ts', './Message.ts', './AssetManager.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, Node, UITransform, CcNative, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillFailReason, SkillPrototype, RegisterSkill, LanguageEntry, getFightMapInstance, DamageType, FromType, SpineAnimation, getComponentByCharacter, LoadingManager, message, getBaseModManager;
+System.register("chunks:///_virtual/DivineLight.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './FightMapManager.ts', './CharacterPrototype.ts', './SpineAnimation.ts', './CharacterToPrefabMap.ts', './LoadingManager.ts', './Message.ts', './AssetManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, Node, UITransform, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillFailReason, SkillPrototype, RegisterSkill, LanguageEntry, getFightMapInstance, DamageType, FromType, SpineAnimation, getComponentByCharacter, LoadingManager, message, getBaseModManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -6762,8 +6805,6 @@ System.register("chunks:///_virtual/DivineLight.ts", ['./rollupPluginModLoBabelH
       sp = module.sp;
       Node = module.Node;
       UITransform = module.UITransform;
-    }, function (module) {
-      CcNative = module.CcNative;
     }, function (module) {
       RegisterLanguageEntry = module.RegisterLanguageEntry;
       LanguageManager = module.LanguageManager;
@@ -6860,18 +6901,16 @@ System.register("chunks:///_virtual/DivineLight.ts", ['./rollupPluginModLoBabelH
         var _proto = DivineLight.prototype;
         _proto.icon = function icon() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context.t0 = res;
-                  _context.next = 4;
-                  return assets.load("Texture/Skill/DivineLight/spriteFrame", SpriteFrame, true);
-                case 4:
+                  _context.next = 3;
+                  return getBaseModManager().load("Texture/Skill/DivineLight/spriteFrame", SpriteFrame, true);
+                case 3:
                   _context.t1 = _context.sent.value;
                   (0, _context.t0)(_context.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context.stop();
               }
@@ -7011,8 +7050,11 @@ System.register("chunks:///_virtual/DivineLight.ts", ['./rollupPluginModLoBabelH
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
               _context3.next = 2;
-              return getBaseModManager().load("Spine/Effect/0001/Hero_5404_effect", sp.SkeletonData, true);
+              return getBaseModManager().load("Texture/Skill/DivineLight/spriteFrame", SpriteFrame, true);
             case 2:
+              _context3.next = 4;
+              return getBaseModManager().load("Spine/Effect/0001/Hero_5404_effect", sp.SkeletonData, true);
+            case 4:
             case "end":
               return _context3.stop();
           }
@@ -7730,8 +7772,8 @@ System.register("chunks:///_virtual/effectScope.ts", ['./rollupPluginModLoBabelH
   };
 });
 
-System.register("chunks:///_virtual/Enchanter.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, _decorator, SpriteFrame, CcNative, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillPrototype, RegisterSkill, LanguageEntry;
+System.register("chunks:///_virtual/Enchanter.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './LoadingManager.ts', './AssetManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, _decorator, SpriteFrame, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillPrototype, RegisterSkill, LanguageEntry, LoadingManager, getBaseModManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -7742,8 +7784,6 @@ System.register("chunks:///_virtual/Enchanter.ts", ['./rollupPluginModLoBabelHel
       cclegacy = module.cclegacy;
       _decorator = module._decorator;
       SpriteFrame = module.SpriteFrame;
-    }, function (module) {
-      CcNative = module.CcNative;
     }, function (module) {
       RegisterLanguageEntry = module.RegisterLanguageEntry;
       LanguageManager = module.LanguageManager;
@@ -7758,6 +7798,10 @@ System.register("chunks:///_virtual/Enchanter.ts", ['./rollupPluginModLoBabelHel
       RegisterSkill = module.RegisterSkill;
     }, function (module) {
       LanguageEntry = module.LanguageEntry;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
+    }, function (module) {
+      getBaseModManager = module.getBaseModManager;
     }],
     execute: function () {
       var _dec, _class, _dec2, _class2, _dec3, _dec4, _dec5, _class3;
@@ -7826,18 +7870,16 @@ System.register("chunks:///_virtual/Enchanter.ts", ['./rollupPluginModLoBabelHel
         var _proto = Enchanter.prototype;
         _proto.icon = function icon() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context.t0 = res;
-                  _context.next = 4;
-                  return assets.load("Texture/Skill/Enchanter/spriteFrame", SpriteFrame, true);
-                case 4:
+                  _context.next = 3;
+                  return getBaseModManager().load("Texture/Skill/Enchanter/spriteFrame", SpriteFrame, true);
+                case 3:
                   _context.t1 = _context.sent.value;
                   (0, _context.t0)(_context.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context.stop();
               }
@@ -7869,6 +7911,18 @@ System.register("chunks:///_virtual/Enchanter.ts", ['./rollupPluginModLoBabelHel
         }]);
         return Enchanter;
       }(SkillPrototype)) || _class3) || _class3) || _class3));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+        return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+          while (1) switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return getBaseModManager().load("Texture/Skill/Enchanter/spriteFrame", SpriteFrame, true);
+            case 2:
+            case "end":
+              return _context2.stop();
+          }
+        }, _callee2);
+      })));
       cclegacy._RF.pop();
     }
   };
@@ -10411,7 +10465,7 @@ System.register("chunks:///_virtual/FightMapPrototype.ts", ['./rollupPluginModLo
           key: "roomData",
           get: function get() {
             var result = [];
-            for (var i = 0; i < 30; i++) result.push(RoomPrototype);
+            for (var i = 0; i < 50; i++) result.push(RoomPrototype);
             for (var _i = 0; _i < 5; _i++) result.push(TreasureRoom);
             return result;
           }
@@ -10423,17 +10477,17 @@ System.register("chunks:///_virtual/FightMapPrototype.ts", ['./rollupPluginModLo
   };
 });
 
-System.register("chunks:///_virtual/FightPrefab.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './ExtensionComponent.ts', './CharacterInstance.ts', './FightCharacterPrefab.ts', './index6.ts', './CharacterPrototype.ts', './Normal.ts', './SkillConfig.ts', './CharacterManager2.ts', './SkillManager.ts', './Message.ts', './LanguageManager.ts', './SettingManager.ts', './LanguageEntry.ts', './CharacterToPrefabMap.ts'], function (exports) {
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, _decorator, Prefab, instantiate, Sprite, Label, Button, Color, CcNative, ExtensionComponent, CharacterEvent, FightCharacterPrefab, Rx, DamageType, Normal, isSkillPassive, getCharacterKey, getSkillKey, message, LanguageManager, settingManager, LanguageEntry, bindCharacterToComponent, unbindCharacterComponent;
+System.register("chunks:///_virtual/FightPrefab.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './ExtensionComponent.ts', './CharacterInstance.ts', './FightCharacterPrefab.ts', './index6.ts', './CharacterPrototype.ts', './Normal.ts', './SkillConfig.ts', './CharacterManager2.ts', './SkillManager.ts', './Message.ts', './LanguageManager.ts', './SettingManager.ts', './LanguageEntry.ts', './CharacterToPrefabMap.ts', './LoadingManager.ts'], function (exports) {
+  var _applyDecoratedDescriptor, _asyncToGenerator, _regeneratorRuntime, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, _createClass, cclegacy, _decorator, Prefab, instantiate, Sprite, Label, Button, Color, CcNative, ExtensionComponent, CharacterEvent, FightCharacterPrefab, Rx, DamageType, Normal, isSkillPassive, getCharacterKey, getSkillKey, message, LanguageManager, settingManager, LanguageEntry, bindCharacterToComponent, unbindCharacterComponent, LoadingManager;
   return {
     setters: [function (module) {
       _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
+      _asyncToGenerator = module.asyncToGenerator;
+      _regeneratorRuntime = module.regeneratorRuntime;
       _inheritsLoose = module.inheritsLoose;
       _initializerDefineProperty = module.initializerDefineProperty;
       _assertThisInitialized = module.assertThisInitialized;
       _createClass = module.createClass;
-      _asyncToGenerator = module.asyncToGenerator;
-      _regeneratorRuntime = module.regeneratorRuntime;
     }, function (module) {
       cclegacy = module.cclegacy;
       _decorator = module._decorator;
@@ -10474,6 +10528,8 @@ System.register("chunks:///_virtual/FightPrefab.ts", ['./rollupPluginModLoBabelH
     }, function (module) {
       bindCharacterToComponent = module.bindCharacterToComponent;
       unbindCharacterComponent = module.unbindCharacterComponent;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
     }],
     execute: function () {
       var _dec, _dec2, _class, _class2, _descriptor;
@@ -10918,6 +10974,20 @@ System.register("chunks:///_virtual/FightPrefab.ts", ['./rollupPluginModLoBabelH
         writable: true,
         initializer: null
       }), _class2)) || _class));
+
+      // 预加载战斗场景
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
+        return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+          while (1) switch (_context10.prev = _context10.next) {
+            case 0:
+              _context10.next = 2;
+              return new CcNative.Asset.AssetManager("PrefabResource").load("FightPrefab/FightPrefab", Prefab, true);
+            case 2:
+            case "end":
+              return _context10.stop();
+          }
+        }, _callee10);
+      })));
       cclegacy._RF.pop();
     }
   };
@@ -11444,8 +11514,8 @@ System.register("chunks:///_virtual/FiniteStateMachine.ts", ['./rollupPluginModL
   };
 });
 
-System.register("chunks:///_virtual/Fireball.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './FightMapManager.ts', './CharacterPrototype.ts', './SpineAnimation.ts', './CharacterToPrefabMap.ts', './Message.ts', './AssetManager.ts', './Burn.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, Node, UITransform, sp, CcNative, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillFailReason, SkillPrototype, RegisterSkill, LanguageEntry, getFightMapInstance, DamageType, FromType, SpineAnimation, getComponentByCharacter, message, getBaseModManager, Burn;
+System.register("chunks:///_virtual/Fireball.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './FightMapManager.ts', './CharacterPrototype.ts', './SpineAnimation.ts', './CharacterToPrefabMap.ts', './LoadingManager.ts', './Message.ts', './AssetManager.ts', './Burn.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, Node, UITransform, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillFailReason, SkillPrototype, RegisterSkill, LanguageEntry, getFightMapInstance, DamageType, FromType, SpineAnimation, getComponentByCharacter, LoadingManager, message, getBaseModManager, Burn;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -11455,11 +11525,9 @@ System.register("chunks:///_virtual/Fireball.ts", ['./rollupPluginModLoBabelHelp
     }, function (module) {
       cclegacy = module.cclegacy;
       SpriteFrame = module.SpriteFrame;
+      sp = module.sp;
       Node = module.Node;
       UITransform = module.UITransform;
-      sp = module.sp;
-    }, function (module) {
-      CcNative = module.CcNative;
     }, function (module) {
       RegisterLanguageEntry = module.RegisterLanguageEntry;
       LanguageManager = module.LanguageManager;
@@ -11484,6 +11552,8 @@ System.register("chunks:///_virtual/Fireball.ts", ['./rollupPluginModLoBabelHelp
       SpineAnimation = module.SpineAnimation;
     }, function (module) {
       getComponentByCharacter = module.getComponentByCharacter;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
     }, function (module) {
       message = module.message;
     }, function (module) {
@@ -11556,18 +11626,16 @@ System.register("chunks:///_virtual/Fireball.ts", ['./rollupPluginModLoBabelHelp
         var _proto = Fireball.prototype;
         _proto.icon = function icon() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context.t0 = res;
-                  _context.next = 4;
-                  return assets.load("Texture/Skill/Fireball/spriteFrame", SpriteFrame, true);
-                case 4:
+                  _context.next = 3;
+                  return getBaseModManager().load("Texture/Skill/Fireball/spriteFrame", SpriteFrame, true);
+                case 3:
                   _context.t1 = _context.sent.value;
                   (0, _context.t0)(_context.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context.stop();
               }
@@ -11701,16 +11769,28 @@ System.register("chunks:///_virtual/Fireball.ts", ['./rollupPluginModLoBabelHelp
       }(SkillPrototype)) || _class3) || _class3) || _class3));
 
       // 预加载特效动画 
-      // LoadingManager.addLoadingQueue(async () => {
-      //     await getBaseModManager().load("Spine/Effect/0001/Hero_5404_effect", sp.SkeletonData, true)
-      // })
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return getBaseModManager().load("Texture/Skill/Fireball/spriteFrame", SpriteFrame, true);
+            case 2:
+              _context3.next = 4;
+              return getBaseModManager().load("Spine/Effect/0001/Hero_5404_effect", sp.SkeletonData, true);
+            case 4:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      })));
       cclegacy._RF.pop();
     }
   };
 });
 
-System.register("chunks:///_virtual/FoxDemon.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './BasePrototypeProperty.ts', './CharacterPrototype.ts', './CharacterManager2.ts', './CharacterToPrefabMap.ts', './MonsterManager.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, AudioClip, settingManager, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, BasePrototypeProperty, CharacterPrototype, RegisterCharacter, getComponentByCharacter, registerMonster;
+System.register("chunks:///_virtual/FoxDemon.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './BasePrototypeProperty.ts', './CharacterPrototype.ts', './CharacterManager2.ts', './CharacterToPrefabMap.ts', './MonsterManager.ts', './LoadingManager.ts', './AssetManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, AudioClip, settingManager, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, BasePrototypeProperty, CharacterPrototype, RegisterCharacter, getComponentByCharacter, registerMonster, LoadingManager, getBaseModManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -11741,6 +11821,10 @@ System.register("chunks:///_virtual/FoxDemon.ts", ['./rollupPluginModLoBabelHelp
       getComponentByCharacter = module.getComponentByCharacter;
     }, function (module) {
       registerMonster = module.registerMonster;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
+    }, function (module) {
+      getBaseModManager = module.getBaseModManager;
     }],
     execute: function () {
       var _dec, _class, _dec2, _class2, _dec3, _dec4, _class3;
@@ -11939,6 +12023,18 @@ System.register("chunks:///_virtual/FoxDemon.ts", ['./rollupPluginModLoBabelHelp
         }]);
         return FoxDemon;
       }(CharacterPrototype)) || _class3) || _class3));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return getBaseModManager().load("Spine/Monster/FoxDemon/hero00036", sp.SkeletonData, true);
+            case 2:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      })));
       cclegacy._RF.pop();
     }
   };
@@ -12715,8 +12811,8 @@ System.register("chunks:///_virtual/HpMedicine.ts", ['./rollupPluginModLoBabelHe
   };
 });
 
-System.register("chunks:///_virtual/Iatrotechnics.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './SkillConfig.ts', './index3.ts', './LanguageEntry.ts', './LanguageManager.ts', './CharacterPrototype.ts', './SkillPrototype.ts', './SkillManager.ts', './Message.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, CcNative, LanguageEntry, RegisterLanguageEntry, LanguageManager, FromType, SkillFailReason, SkillPrototype, RegisterSkill, message;
+System.register("chunks:///_virtual/Iatrotechnics.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './SettingManager.ts', './SkillConfig.ts', './LanguageEntry.ts', './LanguageManager.ts', './CharacterPrototype.ts', './SkillPrototype.ts', './SkillManager.ts', './Message.ts', './AssetManager.ts', './LoadingManager.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, LanguageEntry, RegisterLanguageEntry, LanguageManager, FromType, SkillFailReason, SkillPrototype, RegisterSkill, message, getBaseModManager, LoadingManager;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -12732,8 +12828,6 @@ System.register("chunks:///_virtual/Iatrotechnics.ts", ['./rollupPluginModLoBabe
       RegisterPlayerSkill = module.RegisterPlayerSkill;
       RegisterSkillUpLevel = module.RegisterSkillUpLevel;
     }, function (module) {
-      CcNative = module.CcNative;
-    }, function (module) {
       LanguageEntry = module.LanguageEntry;
     }, function (module) {
       RegisterLanguageEntry = module.RegisterLanguageEntry;
@@ -12747,6 +12841,10 @@ System.register("chunks:///_virtual/Iatrotechnics.ts", ['./rollupPluginModLoBabe
       RegisterSkill = module.RegisterSkill;
     }, function (module) {
       message = module.message;
+    }, function (module) {
+      getBaseModManager = module.getBaseModManager;
+    }, function (module) {
+      LoadingManager = module.LoadingManager;
     }],
     execute: function () {
       var _dec, _class, _dec2, _class2, _dec3, _dec4, _dec5, _class3;
@@ -12813,18 +12911,16 @@ System.register("chunks:///_virtual/Iatrotechnics.ts", ['./rollupPluginModLoBabe
         var _proto = Iatrotechnics.prototype;
         _proto.icon = function icon() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context.t0 = res;
-                  _context.next = 4;
-                  return assets.load("Texture/Skill/Iatrotechnics/spriteFrame", SpriteFrame, true);
-                case 4:
+                  _context.next = 3;
+                  return getBaseModManager().load("Texture/Skill/Iatrotechnics/spriteFrame", SpriteFrame, true);
+                case 3:
                   _context.t1 = _context.sent.value;
                   (0, _context.t0)(_context.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context.stop();
               }
@@ -12910,6 +13006,18 @@ System.register("chunks:///_virtual/Iatrotechnics.ts", ['./rollupPluginModLoBabe
         }]);
         return Iatrotechnics;
       }(SkillPrototype)) || _class3) || _class3) || _class3));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return getBaseModManager().load("Texture/Skill/Iatrotechnics/spriteFrame", SpriteFrame, true);
+            case 2:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3);
+      })));
       cclegacy._RF.pop();
     }
   };
@@ -17009,7 +17117,7 @@ System.register("chunks:///_virtual/Message.ts", ['./rollupPluginModLoBabelHelpe
           while (1) switch (_context12.prev = _context12.next) {
             case 0:
               _context12.next = 2;
-              return message.preloadConfirm();
+              return message.preloadLoading();
             case 2:
               return _context12.abrupt("return", _context12.sent);
             case 3:
@@ -17023,7 +17131,7 @@ System.register("chunks:///_virtual/Message.ts", ['./rollupPluginModLoBabelHelpe
           while (1) switch (_context13.prev = _context13.next) {
             case 0:
               _context13.next = 2;
-              return message.preloadTaskNotify();
+              return message.preloadConfirm();
             case 2:
               return _context13.abrupt("return", _context13.sent);
             case 3:
@@ -17037,7 +17145,7 @@ System.register("chunks:///_virtual/Message.ts", ['./rollupPluginModLoBabelHelpe
           while (1) switch (_context14.prev = _context14.next) {
             case 0:
               _context14.next = 2;
-              return message.preloadCongratulations();
+              return message.preloadTaskNotify();
             case 2:
               return _context14.abrupt("return", _context14.sent);
             case 3:
@@ -17045,6 +17153,20 @@ System.register("chunks:///_virtual/Message.ts", ['./rollupPluginModLoBabelHelpe
               return _context14.stop();
           }
         }, _callee14);
+      })));
+      LoadingManager.addLoadingQueue( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee15() {
+        return _regeneratorRuntime().wrap(function _callee15$(_context15) {
+          while (1) switch (_context15.prev = _context15.next) {
+            case 0:
+              _context15.next = 2;
+              return message.preloadCongratulations();
+            case 2:
+              return _context15.abrupt("return", _context15.sent);
+            case 3:
+            case "end":
+              return _context15.stop();
+          }
+        }, _callee15);
       })));
       var message = exports('message', new Message());
       cclegacy._RF.pop();
@@ -27830,8 +27952,8 @@ System.register("chunks:///_virtual/StorageDTO.ts", ['cc'], function (exports) {
   };
 });
 
-System.register("chunks:///_virtual/SunShining.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './index3.ts', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './FightMapManager.ts', './CharacterPrototype.ts', './SpineAnimation.ts', './CharacterToPrefabMap.ts', './LoadingManager.ts', './Message.ts', './AssetManager.ts', './Burn.ts'], function (exports) {
-  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, Node, UITransform, CcNative, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillFailReason, SkillPrototype, RegisterSkill, LanguageEntry, getFightMapInstance, DamageType, FromType, SpineAnimation, getComponentByCharacter, LoadingManager, message, getBaseModManager, Burn;
+System.register("chunks:///_virtual/SunShining.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './LanguageManager.ts', './SettingManager.ts', './SkillConfig.ts', './SkillPrototype.ts', './SkillManager.ts', './LanguageEntry.ts', './FightMapManager.ts', './CharacterPrototype.ts', './SpineAnimation.ts', './CharacterToPrefabMap.ts', './LoadingManager.ts', './Message.ts', './AssetManager.ts', './Burn.ts'], function (exports) {
+  var _inheritsLoose, _createClass, _asyncToGenerator, _regeneratorRuntime, cclegacy, SpriteFrame, sp, Node, UITransform, RegisterLanguageEntry, LanguageManager, settingManager, RegisterPlayerSkill, RegisterSkillUpLevel, SkillFailReason, SkillPrototype, RegisterSkill, LanguageEntry, getFightMapInstance, DamageType, FromType, SpineAnimation, getComponentByCharacter, LoadingManager, message, getBaseModManager, Burn;
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
@@ -27844,8 +27966,6 @@ System.register("chunks:///_virtual/SunShining.ts", ['./rollupPluginModLoBabelHe
       sp = module.sp;
       Node = module.Node;
       UITransform = module.UITransform;
-    }, function (module) {
-      CcNative = module.CcNative;
     }, function (module) {
       RegisterLanguageEntry = module.RegisterLanguageEntry;
       LanguageManager = module.LanguageManager;
@@ -27944,18 +28064,16 @@ System.register("chunks:///_virtual/SunShining.ts", ['./rollupPluginModLoBabelHe
         var _proto = Fireball.prototype;
         _proto.icon = function icon() {
           return new Promise( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(res) {
-            var assets;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  assets = new CcNative.Asset.AssetManager("ModBaseResource");
                   _context.t0 = res;
-                  _context.next = 4;
-                  return assets.load("Texture/Skill/DivineLight/spriteFrame", SpriteFrame, true);
-                case 4:
+                  _context.next = 3;
+                  return getBaseModManager().load("Texture/Skill/DivineLight/spriteFrame", SpriteFrame, true);
+                case 3:
                   _context.t1 = _context.sent.value;
                   (0, _context.t0)(_context.t1);
-                case 6:
+                case 5:
                 case "end":
                   return _context.stop();
               }
@@ -28096,6 +28214,9 @@ System.register("chunks:///_virtual/SunShining.ts", ['./rollupPluginModLoBabelHe
               _context3.next = 2;
               return getBaseModManager().load("Spine/Effect/0001/Hero_5404_effect", sp.SkeletonData, true);
             case 2:
+              _context3.next = 4;
+              return getBaseModManager().load("Texture/Skill/DivineLight/spriteFrame", SpriteFrame, true);
+            case 4:
             case "end":
               return _context3.stop();
           }
